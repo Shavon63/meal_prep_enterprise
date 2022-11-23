@@ -22,4 +22,4 @@ mongoose.connection.on('error', (error) =>{
 
 //access models
 module.exports.Detox = require("./detox.js")
-module.exports.WeightLoss = require('./weight_loss.js')
+module.exports.Keto = require('./keto.js')

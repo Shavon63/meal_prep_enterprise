@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema 
 
-const weightLossSchema= new Schema(
+const ketoSchema= new Schema(
     {
         day: {type: String, required: true},
         morning: {type: String, enum: ['Egg Avacado Sandwhich','Over Night Oats & blueberries','Peanut Butter Banana Smoothie','Blueberry Banana Acai Bowl'], required: true},
@@ -11,8 +11,8 @@ const weightLossSchema= new Schema(
     }
 ) 
 
-// create the WeightLoss schema model
-const WeightLoss = mongoose.model('WeightLoss', weightLossSchema)
+// create the keto schema model
+const Keto = mongoose.model('Keto', ketoSchema)
 
 //export the  schema 
-module.exports= WeightLoss 
+module.exports= Keto 

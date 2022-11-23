@@ -79,7 +79,7 @@ const detoxRegiment = [
     
 ]
 
-const weight_loss_seed = [
+const keto_seed = [
     {
         day: 'Monday',
         morning: 'Egg Avacado Sandwhich',
@@ -141,17 +141,17 @@ db.Detox.deleteMany({}, (err, detox) => {
     }
 })
 
-db.WeightLoss.deleteMany({}, (err, weight) => {
+db.Keto.deleteMany({}, (err, keto) => {
     if (err) {
         console.log('Error occured in remove', err)
     } else {
         console.log('Removed all weightLoss')
 
-        db.WeightLoss.insertMany(weight_loss_seed, (err, weight) => {
+        db.Keto.insertMany(keto_seed, (err, keto) => {
             if (err) {
                 console.log('Error occured in insertMany', err)
             } else {
-                console.log('Created', weight.length, 'weightLoss')
+                console.log('Created', keto.length, 'ketodiet')
             }
         })
     }

@@ -5,8 +5,8 @@ const methodOverride = require('method-override');
 // access models
 const db = require('./models')
 // access controllers
-// const locationsCtrl = require('./controllers/locations')
-// const logEntryCtrl = require('./controllers/logEntries')
+const detoxCtrl = require('./controllers/detox')
+const ketoCtrl = require('./controllers/keto')
 
 
 
@@ -25,4 +25,30 @@ app.use((req, res, next) => {
     console.log('I run for all routes');
     next();
 });
+//+-+-+-+-+-+-+-
+//routes
+//+-=-+-+-+-+-+-
+//this route will be the home page route 
+app.get('/', (req, res)=> {
+    //db detox needs to be accessed to render on page
+    db.Detox.find({}, (err, detox)=> {
+    //call on database of weightLoss to render it on page
+    db.Keto.find({}, (err, keto)=> {
+        //this will render the file for weight_loss when url persist
+        res.render('home', {
+            detox: detox,
+            keto: keto,
+            tabTitle: "Meal Prep Enterprise"
+        }) 
+      })
+  })   
+})
+// //All routes affecting the detox model: This tells our app to look at the `controllers/detox.js` file to handle all routes that begin with `localhost:3000/mealplan`
+app.use('/detox', detoxCtrl)
+//all routes affection keto
+app.use('/keto', ketoCtrl)
 
+//LISTENER
+app.listen(port, ()=>{
+    console.log(`App is running on localhost:${port}`)
+})
