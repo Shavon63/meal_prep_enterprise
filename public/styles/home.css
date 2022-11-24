@@ -1,0 +1,29 @@
+.nav {
+display: flex;
+flex-direction: row;
+position: sticky;
+background-color:white;
+}
+
+.items_container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between ;
+}
+
+header {
+    margin-top: 0;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}
+
+
+.heading_background {
+    background-image: url(https://i.imgur.com/BpMhdhq.jpg);
+    height: 500px;
+    overflow-y: scroll;
+}

@@ -5,6 +5,14 @@ const router = express.Router()
 
 
 // rendering mealplan page 
+router.get('/',(req, res)=> {
+    db.Detox.find({}, (err, detox)=> {
+    res.render('detoxshow', {
+        detox: detox,
+        tabTitle: "Detox Meal Plan"
+    })
+})
+})
 
 // New Route (GET/Read): This route renders a form the user will use to POST (create) a new location
 router.get('/new', (req, res) => {
@@ -31,9 +39,9 @@ router.get('/:id', (req, res) => {
     // find item specific to the URL
     db.Detox.findById(req.params.id, (err, detox) => {
     // show the showpage of that specific item
-    res.render("showDetox", {
+    res.render("showMeal", {
         detox: detox,
-        tabTitle: "Item Is" + detox.day
+        tabTitle: "Item Is " + detox.name
     })
     
 })

@@ -4,76 +4,90 @@ const db = require('./')
 const detoxRegiment = [
     
         {
-            day: 'Monday',
+            name: 'Monday',
             breakfast:'Strawberry Smoothie',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: 'Curry Chickpeas & Wildrice w Salad',
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/lxfqsjy.jpg', 'https://i.imgur.com/QtUWien.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/lxfqsjy.jpg',
+            images: 'https://i.imgur.com/QtUWien.jpg',
+            img: 'https://i.imgur.com/UkTmDdl.jpg'
         },
         {
-            day: 'Tuesday',
+            name: 'Tuesday',
             breakfast: 'Coconut Papaya Smoothie',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: 'Steamed veggies & Wildrice Cocunut Sauce',
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/9qeZ8dH.jpg', 'https://i.imgur.com/FLEtWDL.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/9qeZ8dH.jpg',
+            images:'https://i.imgur.com/FLEtWDL.jpg', 
+            img: 'https://i.imgur.com/UkTmDdl.jpg'
         }, 
         {
-            day: 'Wednesday',
+            name: 'Wednesday',
             breakfast: 'Blackberry Apple Acai Bowl',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: 'Steamed Zucchini, Pumpkin, Tommatos, Onions, Bellpeppers',
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/xao4CzF.jpg', 'https://i.imgur.com/nxx8URk.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/xao4CzF.jpg', 
+            images: 'https://i.imgur.com/nxx8URk.jpg', 
+            img: 'https://i.imgur.com/UkTmDdl.jpg'
         }, 
         {
-            day: 'Thursday',
+            name: 'Thursday',
             breakfast: 'Blackberry Grape Smoothie',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: 'Curry Chickpeas & Wildrice w Salad',
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/NHwqNM4.jpg', 'https://i.imgur.com/QtUWien.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/NHwqNM4.jpg', 
+            images: 'https://i.imgur.com/QtUWien.jpg', 
+            img: 'https://i.imgur.com/UkTmDdl.jpg'
         }, 
         {
-            day: 'Friday',
+            name: 'Friday',
             breakfast: 'Apple Bannana Smoothie',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: "Lentil Veggie Soup",
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/0UCkBQQ.jpg', 'https://i.imgur.com/a6gHr8E.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/0UCkBQQ.jpg', 
+            images: 'https://i.imgur.com/a6gHr8E.jpg', 
+            img:'https://i.imgur.com/UkTmDdl.jpg'
             
         }, 
         {
-            day: 'Saturday',
+            name: 'Saturday',
             breakfast: 'Coconut Papaya Smoothie',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: 'Steamed Zucchini, Pumpkin, Tommatos, Onions, Bellpeppers',
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/9qeZ8dH.jpg', 'https://i.imgur.com/nxx8URk.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/9qeZ8dH.jpg', 
+            images: 'https://i.imgur.com/nxx8URk.jpg', 
+            img: 'https://i.imgur.com/UkTmDdl.jpg'
 
         },
         {
-            day: 'Sunday',
+            name: 'Sunday',
             breakfast: 'Blackberry Apple Acai Bowl',
             morningTea: 'Lymphatic Endocrine Blend',
             lunch: '4 oz Pstachios',
             dinner: 'Steamed veggies & Wildrice Cocunut Sauce',
             afternoonTea: 'Lymphatic Endocrine Blend',
             nightimePills: 'Mucus Buster Blend ' ,
-            image: "'https://i.imgur.com/xao4CzF.jpg', 'https://i.imgur.com/FLEtWDL.jpg', 'https://i.imgur.com/UkTmDdl.jpg'"
+            image: 'https://i.imgur.com/xao4CzF.jpg', 
+            images: 'https://i.imgur.com/FLEtWDL.jpg', 
+            img: 'https://i.imgur.com/UkTmDdl.jpg'
     }
         
     

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>DETOX PREP BOX</h1> 
+    </div>
+    <div class="detox_meal">
+        <ul class="detox_meal_container">
+            <%for(let deto of detox) {%>
+                <li class="detox_meal_items">
+                    <h2><%= deto.name %></h2> 
+                    <br />
+                        <a href="/detox/<%=deto._id%>">
+                            <img src= <%= deto.images %> height="300" width="350">
+
+                        </a>
+                        <br />
+                        <h4><%= deto.dinner %></h4>
+                        <br />
+                            <p>2 Meals</p> 
+                            <p>1 Snack</p>  
+                            <p>2 Teas & 1 pill</p>  
+                 </li>                    
+            <%}%>    
+        </ul>
+
+    </div>
+
+</body>
+</html>
