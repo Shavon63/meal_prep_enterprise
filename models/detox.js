@@ -12,9 +12,9 @@ const detoxSchema = new Schema(
         dinner: {type: String, enum: ['Curry Chickpeas & Wildrice w Salad', 'Steamed veggies & Wildrice Cocunut Sauce', 'Steamed Zucchini, Pumpkin, Tommatos, Onions, Bellpeppers', 'Lentil Veggie Soup'], required: true},
         afternoonTea: {type: String, default: 'Ashwaganda'},
         nightimePills: {type: String, default: 'Detox Blend'},
-        image: {type: String, default: 'https://i.imgur.com/KZSpwFp.jpg'},
-        images: {type: String, default: 'https://i.imgur.com/KZSpwFp.jpg'},
-        img: {type: String, default: 'https://i.imgur.com/KZSpwFp.jpg'}
+        image: {type: String, default: 'https://i.imgur.com/HgmXfq8.jpg[/img'},
+        images: {type: String, default: 'https://i.imgur.com/HgmXfq8.jpg[/img'},
+        img: {type: String, default: 'https://i.imgur.com/HgmXfq8.jpg[/img'}
         
     }
 )

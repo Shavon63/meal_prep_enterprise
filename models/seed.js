@@ -13,7 +13,8 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/lxfqsjy.jpg',
             images: 'https://i.imgur.com/QtUWien.jpg',
-            img: 'https://i.imgur.com/UkTmDdl.jpg'
+            img: 'https://i.imgur.com/HgmXfq8.jpg'
+
         },
         {
             name: 'Tuesday',
@@ -25,7 +26,8 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/9qeZ8dH.jpg',
             images:'https://i.imgur.com/FLEtWDL.jpg', 
-            img: 'https://i.imgur.com/UkTmDdl.jpg'
+            img: 'https://i.imgur.com/HgmXfq8.jpg'
+
         }, 
         {
             name: 'Wednesday',
@@ -37,7 +39,8 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/xao4CzF.jpg', 
             images: 'https://i.imgur.com/nxx8URk.jpg', 
-            img: 'https://i.imgur.com/UkTmDdl.jpg'
+            img: 'https://i.imgur.com/HgmXfq8.jpg'
+
         }, 
         {
             name: 'Thursday',
@@ -49,7 +52,8 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/NHwqNM4.jpg', 
             images: 'https://i.imgur.com/QtUWien.jpg', 
-            img: 'https://i.imgur.com/UkTmDdl.jpg'
+            img: 'https://i.imgur.com/HgmXfq8.jpg'
+
         }, 
         {
             name: 'Friday',
@@ -61,7 +65,8 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/0UCkBQQ.jpg', 
             images: 'https://i.imgur.com/a6gHr8E.jpg', 
-            img:'https://i.imgur.com/UkTmDdl.jpg'
+            img:'https://i.imgur.com/HgmXfq8.jpg'
+
             
         }, 
         {
@@ -74,7 +79,7 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/9qeZ8dH.jpg', 
             images: 'https://i.imgur.com/nxx8URk.jpg', 
-            img: 'https://i.imgur.com/UkTmDdl.jpg'
+            img: 'https://i.imgur.com/HgmXfq8.jpg'
 
         },
         {
@@ -87,7 +92,8 @@ const detoxRegiment = [
             nightimePills: 'Mucus Buster Blend ' ,
             image: 'https://i.imgur.com/xao4CzF.jpg', 
             images: 'https://i.imgur.com/FLEtWDL.jpg', 
-            img: 'https://i.imgur.com/UkTmDdl.jpg'
+            img: 'https://i.imgur.com/HgmXfq8.jpg'
+
     }
         
     

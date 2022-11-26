@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <% include ('./partials/head.ejs') %>
     <link rel="stylesheet" href="/styles/home.css">
 </head>
 <body>
-    <header>
-        <p>NYC's #1 Meal Prep For Weight Loss</p>
-    </header>
-    <Div class= "nav" id="nav_container">
-        <img class="nav_img" src="https://i.imgur.com/HF5ftI7.jpg" alt="logo" width="80">
-        <ul class="items_container">
-            <li class="nav_item">
-                <a class="localhost:3000">Home</a></li>
-            <li class="nav_item">Detox Mealplan</li>
-            <li class="nav item">Keto Mealplan</li>
-            <li class="nav_item">Teas</li>
-            <li class="nav_item">Pill Blends</li>
-        </ul>
-    </Div>
+    <%- include ('./partials/nav.ejs') %>
     <div class="heading_background"></div>
     <div class="Seller_point">
         <ul class="seller_point">

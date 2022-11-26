@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include  ('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <%- include ('./partials/nav.ejs') %>
+    <div class="form-flex-containter">
+        <form action="/detox?_method=PUT" method="POST">
+            <label for="breakfast">Breakfast:</label>
+            <select name="breakfast">
+                <option value="Strawberry Smoothie">Strawberry Smoothie</option>
+                <option value="Coconut Papaya Smoothie">Coconut Papaya Smoothie</option>
+                <option value="Blackberry Apple Acai Bowl">Blackberry Apple Acai Bowl</option>
+                <option value="Blackberry Grape Smoothie">Blackberry Grape Smoothie</option>
+                <option value="Apple Bannana Smoothie">Apple Bannana Smoothie</option>
+            </select>
+            <label for="morning tea">Morning Tea:</label>
+            <select name="morning tea">
+                <option value="Lymphatic Endocrine Blend">Endocrine Blend</option>
+                <option value="Brain & Heart Blend">Brain & Heart Blend</option>
+                <option value="Stress Blend">Stress Blend</option>
+                <option value="PCOS Blend">PCOS Blend</option>
+           </select>
+           <label for="lunch">Lunch:</label>
+           <select name="lunch">
+            <option value="4oz Pstachios">4oz Pstachios</option>
+           </select>
+            <label for="dinner">Dinner:</label>
+            <select name="dinenr">
+                <option value="Curry Chickpeas & Wildrice w Salad">Curry Chickpeas & Wildrice w Salad</option>
+                <option value="Steamed veggies & Wildrice Cocunut Sauce">Steamed Veggie & Wildrice Coconut Sauce</option>
+                <option value="Steamed Zucchini, Pumpkin, Tommatos, Onions, Bellpeppers">Steamed Zuccini, Pumpkin, Tomatos, Onions, Bellpeppers</option>
+                <option value="Lentil Veggie Soup">Lentil Veggie Soup</option>
+            </select>
+            <label for="afternoon tea">Afternoon Tea:</label>
+            <select name="afternoon tea">
+                <option value="Lymphatic Endocrine Blend">Endocrine Blend</option>
+                <option value="Brain & Heart Blend">Brain & Heart Blend</option>
+                <option value="Stress Blend">Stress Blend</option>
+                <option value="PCOS Blend">PCOS Blend</option>
+           </select>
+           <label for="nightime pills">Nightime Pills:</label>
+           <select name="nightime pills">
+            <option value="Mucus Buster Blend">Mucus Buster Blend</option>
+           </select>
+           <button type="submit" class="detox-edit-submit">Create Meal</button>
+        </form>
+    </div>
+</body>
+</html>

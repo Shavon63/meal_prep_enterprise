@@ -16,7 +16,7 @@ router.get('/',(req, res)=> {
 
 // New Route (GET/Read): This route renders a form the user will use to POST (create) a new location
 router.get('/new', (req, res) => {
-    res.render('newDetoxItem.ejs', {
+    res.render('newDetoxMeal.ejs', {
         tabTitle: "Detox ItemCreation"
     })
 })
@@ -35,17 +35,39 @@ router.post('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    console.log(req.params.id)
     // find item specific to the URL
     db.Detox.findById(req.params.id, (err, detox) => {
     // show the showpage of that specific item
-    res.render("showMeal", {
+    res.render("showDetoxMeal", {
         detox: detox,
-        tabTitle: "Item Is " + detox.name
+        tabTitle: 'Detox Meal'
     })
     
 })
 }
 )
+// Delete Route allows us to delete and reroute us home. its being updated that the meal was deleted.
+router.delete('/:id', (req, res) => {
 
+    db.Detox.findByIdAndRemove(req.params.id, (err, detox) => {
+        // redirect home onces meal is deleted)
+        res.redirect('/')
+    })
+    // res.send(req.params.id)
+})
+
+router.get('/:id/edit', (req, res) => {
+    db.Detox.findById(req.params.id, (err, detox) => {
+        res.render("editDetox", {
+            detox: detox,
+            tabTitle: "Edit Detox"
+        })
+    })
+})
+//this route is after edit button is pressed it can take us back to detox/.id showdetoxmeal
+router.put('/:id', (req, res)=> {
+    db.Detox.find(req.body.id, (err, detox)=> {
+        res.redirect('/detox/' + detox._id)
+    })
+})
 module.exports = router
