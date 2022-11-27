@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include ('./partials/head.ejs') %>
+   <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <%- include ('./partials/nav.ejs') %>
+    <div>
+        <h1>KETO PREP BOX</h1> 
+    </div>
+    <div class="keto_meal">
+        <ul class="keto_meal_container">
+            <%for(let ket of keto) {%>
+                <li class="keto_meal_items">
+                    <h2><%= ket.day %></h2> 
+                    <br />
+                        <a href="/keto/<%=ket._id%>">
+                            <img src= <%= ket.images %> height="300" width="350">
+
+                        </a>
+                        <br />
+                        <h4 class="dinner_name"><%= ket.dinner %></h4>
+                        <br />
+                            <p>2 Meals</p> 
+                            <p>1 Snack</p>  
+                            <p>2 Teas & 1 pill</p>  
+                 </li>                    
+            <%}%>    
+        </ul>
+
+    </div>
+    <div class="create-meal">
+        <ul>
+            <li><a href="keto/new"><button class="add-meal">Add Meal</button></a></li>
+                <li><a href="keto/cart"><button class="purchase-meal-plan">Purchase Meal Plan</button></a></li>
+
+        </ul>
+    </div>
+
+</body>
+</html>

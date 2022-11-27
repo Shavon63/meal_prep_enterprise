@@ -11,16 +11,16 @@
     </div>
     <div class="detox_meal">
         <ul class="detox_meal_container">
-            <%for(let deto of detox) {%>
+            <%for(let detox of detoxs) {%>
                 <li class="detox_meal_items">
-                    <h2><%= deto.name %></h2> 
+                    <h2><%= detox.name %></h2> 
                     <br />
-                        <a href="/detox/<%=deto._id%>">
-                            <img src= <%= deto.images %> height="300" width="350">
+                        <a href="/detox/<%=detox._id%>">
+                            <img src= <%= detox.images %> height="300" width="350">
 
                         </a>
                         <br />
-                        <h4 class="dinner_name"><%= deto.dinner %></h4>
+                        <h4 class="dinner_name"><%= detox.dinner %></h4>
                         <br />
                             <p>2 Meals</p> 
                             <p>1 Snack</p>  
@@ -32,8 +32,8 @@
     </div>
     <div class="create-meal">
         <ul>
-            <li><a href="detox/new"><button class="add-meal">Add Meal</button></a></li>
-                <li><a href="detox/new"><button class="purchase-meal-plan">Purchase Meal Plan</button></a></li>
+            <li><a href="/detox/new"><button class="add-meal">Add Meal</button></a></li>
+                <li><a href="/detox/cart"><button class="purchase-meal-plan">Purchase Meal Plan</button></a></li>
 
         </ul>
     </div>

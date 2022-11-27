@@ -102,46 +102,60 @@ const detoxRegiment = [
 const keto_seed = [
     {
         day: 'Monday',
-        morning: 'Egg Avacado Sandwhich',
+        breakfast: 'Egg Avacado Sandwhich',
         lunch: 'fiber bar',
         dinner: 'Bake Chicken & Brussels',
-        image: "'https://i.imgur.com/jlX5juV.jpg', 'https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/6XRA0U2.jpg'"
+        image: 'https://i.imgur.com/jlX5juV.jpg', 
+        images: 'https://i.imgur.com/6XRA0U2.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg'
     },  {
         day: 'Tuesday',
-        morning: 'Over Night Oats & blueberries',
+        breakfast: 'Over Night Oats & blueberries',
         lunch: 'fiber bar',
         dinner: 'Steamed Fish & Asparagus',
-        image: "'https://i.imgur.com/KBFKwi8.jpg','https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/LoEvbXj.jpg'",
+        image: 'https://i.imgur.com/KBFKwi8.jpg',
+        images:'https://i.imgur.com/LoEvbXj.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg'
     },  {
         day: 'Wednesday',
-        morning: 'Peanut Butter Banana Smoothie',
+        breakfast: 'Peanut Butter Banana Smoothie',
         lunch: 'fiber bar',
         dinner: 'Pepper Steak & Broccoli',
-        image: "'https://i.imgur.com/wcqP6zl.jpg', 'https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/a3gR1q0.jpg'"
+        image: 'https://i.imgur.com/wcqP6zl.jpg', 
+        images: 'https://i.imgur.com/a3gR1q0.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg'
     },  {
         day: 'Thursday',
-        morning: 'Blueberry Banana Acai Bowl',
+        breakfast: 'Blueberry Banana Acai Bowl',
         lunch: 'fiber bar',
         dinner: 'Smoked Snapper & Veggie Mix',
-        image: "'https://i.imgur.com/cXIqiL1.jpg', 'https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/Ievznlr.jpg'"
+        image: 'https://i.imgur.com/cXIqiL1.jpg', 
+        images: 'https://i.imgur.com/Ievznlr.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg'
     },  {
         day: 'Friday',
-        morning: 'Egg Avacado Sandwhich',
+        breakfast: 'Egg Avacado Sandwhich',
         lunch: 'fiber bar',
         dinner: 'Steamed Fish & Asparagus',
-        image: "'https://i.imgur.com/jlX5juV.jpg', 'https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/LoEvbXj.jpg'"
+        image: 'https://i.imgur.com/jlX5juV.jpg', 
+        images: 'https://i.imgur.com/LoEvbXj.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg'
     },  {
         day: 'Saturday',
-        morning: 'Peanut Butter Banana Smoothie',
+        breakfast: 'Peanut Butter Banana Smoothie',
         lunch: 'fiber bar',
         dinner: 'Grilled Chicken & Veggie Mix',
-        image: "'https://i.imgur.com/wcqP6zl.jpg', 'https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/qx6tj4M.jpg'"
+        image: 'https://i.imgur.com/wcqP6zl.jpg', 
+        images: 'https://i.imgur.com/qx6tj4M.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg'
     },  {
         day: 'Sunday',
-        morning: 'Over Night Oats & blueberries',
+        breakfast: 'Over Night Oats & blueberries',
         lunch: 'fiber bar',
         dinner: 'Smoked Snapper & Veggie Mix',
-        image: "'https://i.imgur.com/KBFKwi8.jpg', 'https://i.imgur.com/JIcjou4.jpg', 'https://i.imgur.com/Ievznlr.jpg'"
+        image: 'https://i.imgur.com/KBFKwi8.jpg', 
+        images: 'https://i.imgur.com/Ievznlr.jpg',
+        img: 'https://i.imgur.com/JIcjou4.jpg' 
     }
 ]
 

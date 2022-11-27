@@ -7,7 +7,7 @@
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div class="form-flex-containter">
-        <form action="/detox/<%= detox._id %>?_method=PUT" method="POST">
+        <form action="/detox/<%=detox._id%>?_method=PUT" method="POST">
             <label for="breakfast">Breakfast:</label>
             <select name="breakfast">
                 <option value="Strawberry Smoothie">Strawberry Smoothie</option>
@@ -36,8 +36,9 @@
                 <option value="Brain & Heart Blend">Brain & Heart Blend</option>
                 <option value="Stress Blend">Stress Blend</option>
                 <option value="PCOS Blend">PCOS Blend</option>
+                <option value="Ashwaganda">Ashwaganda</option>
            </select>
-           <button type="submit" class="detox-edit-submit">Edit Meal</button>
+           <button type="submit" class="detox-edit-submit">Finalize Edit</button>
         </form>
     </div>
 </body>

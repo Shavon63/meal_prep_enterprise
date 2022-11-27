@@ -29,20 +29,42 @@ app.use((req, res, next) => {
 //routes
 //+-=-+-+-+-+-+-
 //this route will be the home page route 
+// app.get('/', (req, res)=> {
+//     //db detox needs to be accessed to render on page
+//     db.Detox.find({}, (err, detox)=> {
+//     //call on database of weightLoss to render it on page
+//     db.Keto.find({}, (err, keto)=> {
+//         //this will render the file for weight_loss when url persist
+//         res.render('home', {
+//             detox: detox,
+//             keto: keto,
+//             tabTitle: "Meal Prep Enterprise"
+//         }) 
+//       })
+//   })   
+// })
 app.get('/', (req, res)=> {
-    //db detox needs to be accessed to render on page
-    db.Detox.find({}, (err, detox)=> {
-    //call on database of weightLoss to render it on page
-    db.Keto.find({}, (err, keto)=> {
-        //this will render the file for weight_loss when url persist
-        res.render('home', {
-            detox: detox,
-            keto: keto,
-            tabTitle: "Meal Prep Enterprise"
-        }) 
-      })
-  })   
+    res.render('home', {
+                    tabTitle: "Meal Prep Enterprise"
+    })
 })
+
+app.get('/keto', (req, res)=> {
+    db.Keto.find({}, (err, keto)=> {
+        res.render('ketoshow', {
+            keto: keto,
+            tabTitle: "keto meals" })
+    })
+})
+
+app.get('/detox', (req, res)=> {
+    db.Detox.find({}, (err, detoxs)=> {
+        res.render('detoxshow', {
+            detoxs: detoxs,
+            tabTitle: "detox meals" })
+    })
+})
+
 // //All routes affecting the detox model: This tells our app to look at the `controllers/detox.js` file to handle all routes that begin with `localhost:3000/mealplan`
 app.use('/detox', detoxCtrl)
 //all routes affection keto

@@ -9,43 +9,44 @@
 <body>
     <%- include ('./partials/nav') %>
     <div class="show-meal" id="flex-container">
-         <h1>Full Meal Plan Content</h1>
-    <h2 class="meal_day_detox_meal"><%=detox.name %></h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src= <%= detox.image %> class="d-block w-100" alt="breakfast" width="400" height="350">
-              </div>
-              <div class="carousel-item">
-                <img src=<%= detox.images %>  class="d-block w-100" alt="dinner" width="400" height="350">>
-              </div>
-              <div class="carousel-item">
-                <img src=<%= detox.img %>  class="d-block w-100" alt="herbs" width="400" height="350">>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      <h1>Full Meal Plan Content</h1>
+      <h2 class="meal_day_detox_meal"><%= detox.name %></h2>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src= <%= detox.image %> class="d-block w-100" alt="breakfast" width="400" height="350">
+           </div>
+           <div class="carousel-item">
+             <img src=<%= detox.images %>  class="d-block w-100" alt="dinner" width="400" height="350">>
+           </div>
+           <div class="carousel-item">
+             <img src=<%= detox.img %>  class="d-block w-100" alt="herbs" width="400" height="350">>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+   
         <br />
         
         Breakfast: <%= detox.breakfast %> 
         <br />
-        Morning Tea: <%=detox.morningTea %>
+        Morning Tea: <%= detox.morningTea %>
         <br />
         lunch: <%= detox.lunch %>
         <br />
         Dinner: <%= detox.dinner %>
-        <br />
+        <br /> 
         Afternoon Tea: <%= detox.afternoonTea %>
         <br />
-        Night Time Pills: <%= detox.nightimePills %>
-        <br />
+        Nightime Pills: <%= detox.nightimePills %>
+
     </div>
     <div class="delete-edit">
         <div>

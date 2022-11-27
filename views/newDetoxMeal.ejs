@@ -7,7 +7,17 @@
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div class="form-flex-containter">
-        <form action="/detox?_method=PUT" method="POST">
+        <form action="/detox" method="post">
+            <label for="name">Day:</label>
+            <select name="name">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
             <label for="breakfast">Breakfast:</label>
             <select name="breakfast">
                 <option value="Strawberry Smoothie">Strawberry Smoothie</option>
@@ -40,11 +50,19 @@
                 <option value="Brain & Heart Blend">Brain & Heart Blend</option>
                 <option value="Stress Blend">Stress Blend</option>
                 <option value="PCOS Blend">PCOS Blend</option>
+                <option value="Ashwaganda">Ashwaganda</option>
            </select>
            <label for="nightime pills">Nightime Pills:</label>
            <select name="nightime pills">
             <option value="Mucus Buster Blend">Mucus Buster Blend</option>
+            <option value="Detox Blend">Detox Blend</option>
            </select>
+           <label for="image">Photo</label>
+           <input type="file" name="Breakfast Photo">
+           <label for="images">Photo</label>
+           <input type="file" name="Dinner Photo">
+           <label for="img">Photo</label>
+           <input type="file" name="Tea Photo">
            <button type="submit" class="detox-edit-submit">Create Meal</button>
         </form>
     </div>

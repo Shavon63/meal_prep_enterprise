@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include  ('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <%- include ('./partials/nav.ejs') %>
+    <div class="form-flex-containter">
+        <form action="/keto/<%=keto._id%>?_method=PUT" method="POST">
+            <label for="breakfast">Breakfast:</label>
+            <select name="breakfast">
+                <option value="Egg Avacado Sandwhich">Egg Avacado Sandwhich</option>
+                <option value="Over Night Oats & blueberries">Over Night Oats & blueberries</option>
+                <option value="Peanut Butter Banana Smoothie">Peanut Butter Banana Smoothie</option>
+                <option value="Blueberry Banana Acai Bowl">Blueberry Banana Acai Bowl</option>
+            </select>
+            <label for="dinner">Dinner:</label>
+            <select name="dinner">
+                <option value="Bake Chicken & Brussels">Bake Chicken & Brussels</option>
+                <option value="Steamed Fish & Asparagus">Steamed Fish & Asparagus/option>
+                <option value="Pepper Steak & Broccoli">Pepper Steak & Broccoli</option>
+                <option value="Smoked Snapper & Veggie Mix">Smoked Snapper & Veggie Mix</option>
+                <option value="Grilled Chicken & Veggie Mix">Grilled Chicken & Veggie Mix</option>
+            </select>
+           <button type="submit" class="detox-edit-submit">Finalize Edit</button>
+        </form>
+    </div>
+</body>
+</html>
