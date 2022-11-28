@@ -3,11 +3,13 @@
 <head>
     <%- include  ('./partials/head.ejs') %>
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/newDetox.css">
+    <link rel="stylesheet" href="/styles/nav.css">
 </head>
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div class="form-flex-containter">
-        <form action="/detox" method="post">
+        <form action="/detox/" class="edit-form" method="post">
             <label for="name">Day:</label>
             <select name="name">
                 <option value="monday">Monday</option>
@@ -27,7 +29,7 @@
                 <option value="Apple Bannana Smoothie">Apple Bannana Smoothie</option>
             </select>
             <label for="morning tea">Morning Tea:</label>
-            <select name="morning tea">
+            <select name="morningTea">
                 <option value="Lymphatic Endocrine Blend">Endocrine Blend</option>
                 <option value="Brain & Heart Blend">Brain & Heart Blend</option>
                 <option value="Stress Blend">Stress Blend</option>
@@ -38,14 +40,14 @@
             <option value="4oz Pstachios">4oz Pstachios</option>
            </select>
             <label for="dinner">Dinner:</label>
-            <select name="dinenr">
+            <select name="dinner">
                 <option value="Curry Chickpeas & Wildrice w Salad">Curry Chickpeas & Wildrice w Salad</option>
                 <option value="Steamed veggies & Wildrice Cocunut Sauce">Steamed Veggie & Wildrice Coconut Sauce</option>
                 <option value="Steamed Zucchini, Pumpkin, Tommatos, Onions, Bellpeppers">Steamed Zuccini, Pumpkin, Tomatos, Onions, Bellpeppers</option>
                 <option value="Lentil Veggie Soup">Lentil Veggie Soup</option>
             </select>
             <label for="afternoon tea">Afternoon Tea:</label>
-            <select name="afternoon tea">
+            <select name="afternoonTea">
                 <option value="Lymphatic Endocrine Blend">Endocrine Blend</option>
                 <option value="Brain & Heart Blend">Brain & Heart Blend</option>
                 <option value="Stress Blend">Stress Blend</option>
@@ -53,16 +55,16 @@
                 <option value="Ashwaganda">Ashwaganda</option>
            </select>
            <label for="nightime pills">Nightime Pills:</label>
-           <select name="nightime pills">
+           <select name="nightimePills">
             <option value="Mucus Buster Blend">Mucus Buster Blend</option>
             <option value="Detox Blend">Detox Blend</option>
            </select>
            <label for="image">Photo</label>
-           <input type="text" name="Breakfast Photo">
+           <input type="file" name="Breakfast Photo">
            <label for="images">Photo</label>
-           <input type="text" name="Dinner Photo">
+           <input type="file" name="Dinner Photo">
            <label for="img">Photo</label>
-           <input type="text" name="Tea Photo">
+           <input type="file" name="Tea Photo">
            <button type="submit" class="detox-edit-submit">Create Meal</button>
         </form>
     </div>

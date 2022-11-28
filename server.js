@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 const methodOverride = require('method-override');
+
+require('dotenv').config()
 // access models
 const db = require('./models')
 // access controllers

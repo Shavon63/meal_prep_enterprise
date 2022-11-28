@@ -40,7 +40,15 @@
 .carousel-control-next{
     opacity: 0;
 }
+.delete-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+}
 .delete-edit button{
     color: rgb(32, 184, 32);
     background-color: white;
+    margin: 50px;
+    border-radius: 10px;
 }

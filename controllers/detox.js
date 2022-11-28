@@ -53,17 +53,21 @@ router.delete('/:id', (req, res) => {
     // res.send(req.params.id)
 })
 
+
 router.get('/:id/edit', (req, res) => {
     db.Detox.findById(req.params.id, (err, detox) => {
+        console.log(detox)
         res.render("editDetox", {
             detox: detox,
             tabTitle: "Edit Detox"
         })
     })
 })
-//this route is after edit button is pressed it can take us back to detox/.id showdetoxmeal
+
+// this route is after edit button is pressed it can take us back to detox/.id showdetoxmeal
 router.put('/:id', (req, res)=> {
-    db.Detox.findByIdAndUpdate(req.body.id, (err, detox)=> {
+    console.log('i am working')
+    db.Detox.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, detox)=> {
         res.redirect("/detox/" + detox._id)
     })
 })

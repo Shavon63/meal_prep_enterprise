@@ -3,11 +3,13 @@
 <head>
     <%- include  ('./partials/head.ejs') %>
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/editDetox.css">
+    <link rel="stylesheet" href="/styles/nav.css">
 </head>
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div class="form-flex-containter">
-        <form action="/detox/<%=detox._id%>?_method=PUT" method="POST">
+        <form action="/detox/<%=detox._id%>?_method=PUT" class="edit-form" method="POST">
             <label for="breakfast">Breakfast:</label>
             <select name="breakfast">
                 <option value="Strawberry Smoothie">Strawberry Smoothie</option>
@@ -17,21 +19,21 @@
                 <option value="Apple Bannana Smoothie">Apple Bannana Smoothie</option>
             </select>
             <label for="morning tea">Morning Tea:</label>
-            <select name="morning tea">
+            <select name="morningTea">
                 <option value="Lymphatic Endocrine Blend">Endocrine Blend</option>
                 <option value="Brain & Heart Blend">Brain & Heart Blend</option>
                 <option value="Stress Blend">Stress Blend</option>
                 <option value="PCOS Blend">PCOS Blend</option>
            </select>
             <label for="dinner">Dinner:</label>
-            <select name="dinenr">
+            <select name="dinner">
                 <option value="Curry Chickpeas & Wildrice w Salad">Curry Chickpeas & Wildrice w Salad</option>
                 <option value="Steamed veggies & Wildrice Cocunut Sauce">Steamed Veggie & Wildrice Coconut Sauce</option>
                 <option value="Steamed Zucchini, Pumpkin, Tommatos, Onions, Bellpeppers">Steamed Zuccini, Pumpkin, Tomatos, Onions, Bellpeppers</option>
                 <option value="Lentil Veggie Soup">Lentil Veggie Soup</option>
             </select>
             <label for="afternoon tea">Afternoon Tea:</label>
-            <select name="afternoon tea">
+            <select name="afternoonTea">
                 <option value="Lymphatic Endocrine Blend">Endocrine Blend</option>
                 <option value="Brain & Heart Blend">Brain & Heart Blend</option>
                 <option value="Stress Blend">Stress Blend</option>
