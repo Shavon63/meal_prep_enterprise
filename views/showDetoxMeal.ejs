@@ -5,12 +5,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/showDetoxMeal.css">
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/nav.css">
 </head>
 <body>
-    <%- include ('./partials/nav') %>
+  <%- include ('./partials/nav.ejs') %>
+  <div>
+    <h1 class="full-meal-plan-heading">Full Meal Plan Content</h1>
+    <h2 class="meal_day_detox_meal"><%= detox.name %></h2>
+  </div>
     <div class="show-meal" id="flex-container">
-      <h1>Full Meal Plan Content</h1>
-      <h2 class="meal_day_detox_meal"><%= detox.name %></h2>
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
          <div class="carousel-inner">
            <div class="carousel-item active">
@@ -31,22 +34,20 @@
            <span class="carousel-control-next-icon" aria-hidden="true"></span>
            <span class="visually-hidden">Next</span>
          </button>
-       </div>
-   
+      </div>
+      <div class="detox-contents">
+        <strong>Breakfast:</strong> <%= detox.breakfast %> 
         <br />
-        
-        Breakfast: <%= detox.breakfast %> 
+        <strong>Morning Tea:</strong> <%= detox.morningTea %>
         <br />
-        Morning Tea: <%= detox.morningTea %>
+        <strong>lunch:</strong> <%= detox.lunch %>
         <br />
-        lunch: <%= detox.lunch %>
-        <br />
-        Dinner: <%= detox.dinner %>
+        <strong>Dinner:</strong> <%= detox.dinner %>
         <br /> 
-        Afternoon Tea: <%= detox.afternoonTea %>
+        <strong>Afternoon Tea:</strong> <%= detox.afternoonTea %>
         <br />
-        Nightime Pills: <%= detox.nightimePills %>
-
+       <strong>Nightime Pills:</strong> <%= detox.nightimePills %>
+      </div>
     </div>
     <div class="delete-edit">
         <div>

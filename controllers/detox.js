@@ -28,7 +28,7 @@ router.get('/new', (req, res) => {
 router.post('/', (req, res) => {
     db.Detox.create(req.body, (err, detox) => {
         //redirects it to home page after created
-        res.redirect('/')
+        res.redirect('/detox/')
     })
 })
 

@@ -1,0 +1,39 @@
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar-nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 0px;
+   
+   
+}
+.navbar-brand{
+    text-decoration: none;
+    color: rgb(32, 184, 32);
+}
+
+.header{
+    background-color: black;
+    height: 40px;
+}
+
+
+.nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px;
+    color: rgb(32, 184, 32);
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.d-flex{
+    margin: auto;
+}

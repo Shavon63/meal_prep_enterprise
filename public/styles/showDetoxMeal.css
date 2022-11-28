@@ -1,4 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Syne+Mono&display=swap');
+
+.full-meal-plan-heading{
+    text-align: center;
+    font-size: 43px;
+    font-family: 'Rubik Distressed', cursive;
+    color: rgb(32, 184, 32);
+}
+.meal_day_detox_meal{
+    text-align: center;
+}
+
 #carouselExampleFade {
     width: 450px;
     height: 350px;
+    margin: 100px
+   
+}
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 600px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(32, 184, 32);
+}
+.detox-contents{
+    margin-top: 180px;
+    padding: 15px;
+    height: 200px;
+    box-shadow: 5px 5px 5px  rgb(32, 184, 32);
+}
+.carousel-control-prev{
+    opacity: 0;
+}
+.carousel-control-next{
+    opacity: 0;
+}
+.delete-edit button{
+    color: rgb(32, 184, 32);
+    background-color: white;
 }

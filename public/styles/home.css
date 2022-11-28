@@ -1,9 +1,6 @@
-.nav {
-display: flex;
-flex-direction: row;
-position: sticky;
-background-color:white;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 .items_container {
     display: flex;
@@ -19,11 +16,51 @@ header {
     background-color: black;
     color: white;
     
-}
+} 
 
 
-.heading_background {
+ .heading_background {
     background-image: url(https://i.imgur.com/BpMhdhq.jpg);
     height: 500px;
     overflow-y: scroll;
+} 
+.seller_point_container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   
+}
+.point_item{
+    list-style: none;
+    margin-right: 50px;
+    height: 100px;
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgb(32, 184, 32);
+}
+
+.preview_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+
+}
+.preview_item{
+    background-color: antiquewhite;
+    height: 350px;
+    font-family: 'Syne Mono', monospace;
+    
+}
+.preview-button{
+    color: rgb(32, 184, 32);
+    background-color: white;
+    border-radius: 6px;
+    border-color: rgb(32, 184, 32);
+}
+
+.choose{
+    text-align: center;
+    font-family: 'Rubik Distressed', cursive;
 }
