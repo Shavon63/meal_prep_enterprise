@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const port = process.env.PORT
+// const port= 3000
 const methodOverride = require('method-override');
 
 // access models
@@ -10,7 +10,7 @@ const db = require('./models')
 const detoxCtrl = require('./controllers/detox')
 const ketoCtrl = require('./controllers/keto')
 
-
+const port = process.env.PORT
 
 // +-+-+-+-+-+-+-+-+-+-+
 // |M|I|D|D|L|E|W|A|R|E|
