@@ -14,7 +14,8 @@ header {
     font-size: 25px;
     text-align: center;
     background-color: black;
-    color: white
+    color: white;
+    width: 100%;
 
 
    
@@ -23,7 +24,7 @@ header {
 
 
  .heading_background {
-    background-image: url(https://i.imgur.com/BpMhdhq.jpg);
+    background-image: url(https://i.imgur.com/6AFa2e3.jpg);
     height: 500px;
     overflow-y: scroll;
 } 
@@ -33,16 +34,16 @@ header {
    justify-content: center;
    
 }
-.point_item{
+.point-item{
     list-style: none;
     margin-right: 50px;
     height: 100px;
     margin-top: 30px;
-    font-size: 22px;
+    font-size: 23px;
     color: rgb(32, 184, 32);
 }
 
-.preview_items{
+.preview-items{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -50,13 +51,18 @@ header {
     text-align: center;
 
 }
-.preview_item{
+.preview-item{
     background-color: antiquewhite;
-    height: 350px;
+    width: 350px;
+    height: 400px;
     font-family: 'Syne Mono', monospace;
     
 }
+.preview-item img{
+    width: 350px;
+}
 .preview-button{
+    margin-top: 140px;
     color: rgb(32, 184, 32);
     background-color: white;
     border-radius: 6px;

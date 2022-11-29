@@ -30,7 +30,7 @@
 
 }
 
-.detox-meal-items{
+.meal-items{
     background-color: white;
     width: 400px;
     text-align: center;
@@ -40,6 +40,7 @@
     border-width: 1px;
     border-color: rgb(32, 184, 32);
     margin: 20px;
+    text-overflow: ellipsis;
     
 }
 .dinner-day{
@@ -52,4 +53,16 @@
 
 .meal-image{
     margin-bottom: 20px;
+}
+.create-meal-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.create-meal button{
+    color: rgb(32, 184, 32);
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
 }

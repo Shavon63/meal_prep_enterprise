@@ -1,9 +1,14 @@
+
+
 .container-fluid{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(39, 38, 38) ;
+}
+.container-fluid a:hover{
+    color: rgb(32, 184, 32);
 }
 .navbar-nav{
    display: flex;
@@ -38,4 +43,8 @@
 
 .d-flex{
     margin: auto;
+}
+
+h3{
+    font-size: 22px;
 }

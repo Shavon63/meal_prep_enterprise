@@ -2,39 +2,43 @@
 <html lang="en">
 <head>
    <%- include ('./partials/head.ejs') %>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
    <link rel="stylesheet" href="/styles/home.css">
    <link rel="stylesheet" href="/styles/nav.css">
+   <link rel="stylesheet" href="/styles/showPages.css">
 </head>
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div>
-        <h1>KETO PREP BOX</h1> 
+        <h1 class="starting-text">KETO PREP BOX</h1> 
     </div>
-    <div class="keto_meal">
-        <ul class="keto_meal_container">
+    <div >
+        <ul class="flex-container">
             <%for(let ket of keto) {%>
-                <li class="keto_meal_items">
-                    <h2><%= ket.day %></h2> 
-                        <h4 class="dinner_name"><%= ket.dinner %></h4>
+                <li class="meal-items">
+                    <h2 class="dinner-day"><%= ket.day %></h2> 
+                        <h4 class="dinner-name"><%= ket.dinner %></h4>
                         <a href="/keto/<%=ket._id%>">
                             <img class="meal-image" src= <%= ket.images %> height="300" width="350">
 
                         </a>
-                            <p>2 Meals</p> 
-                            <p>1 Snack</p>  
-                            <p>2 Teas & 1 pill</p>  
+                        <div class="content-container">
+                            <p><b>2 Meals</b></p> 
+                            <p><b>1 Snack</b></p>  
+                        </div> 
                  </li>                    
             <%}%>    
         </ul>
 
     </div>
     <div class="create-meal">
-        <ul>
+        <ul class="create-meal-container">
             <li><a href="keto/new"><button class="add-meal">Add Meal</button></a></li>
                 <li><a href="keto/cart"><button class="purchase-meal-plan">Purchase Meal Plan</button></a></li>
 
         </ul>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>

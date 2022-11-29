@@ -30,9 +30,10 @@ body{
 .edit-form select{
     margin: 20px;
 }
-.edit-form button{
+.edit-submit{
     color: rgb(32, 184, 32);
     background-color: white;
     margin: 50px;
     border-radius: 10px;
+
 }
