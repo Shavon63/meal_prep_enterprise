@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
         res.redirect('/detox/')
     })
 })
-router.post('/seed', (req, res) => {
+router.get('/seed', (req, res) => {
     const detoxRegiment = [
     
         {

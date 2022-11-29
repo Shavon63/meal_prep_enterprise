@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
     })
 })
 
-router.post('/seed', (req, res) => {
+router.get('/seed', (req, res) => {
     const keto_seed = [
         {
             day: 'Monday',
@@ -92,7 +92,6 @@ router.post('/seed', (req, res) => {
     
     db.Keto.create(keto_seed, (err, keto) => {
         res.redirect('/keto/')
-        // res.send(location)
     })
 })
 
@@ -100,7 +99,7 @@ router.get('/:id', (req, res) => {
     // find item specific to the URL
     db.Keto.findById(req.params.id, (err, keto) => {
     // show the showpage of that specific item
-    res.render("showketoMeal", {
+    res.render("showKetoMeal", {
         keto: keto,
         tabTitle: 'Keto Meal'
     })

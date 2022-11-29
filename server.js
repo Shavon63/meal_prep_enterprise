@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 // })
 app.get('/', (req, res)=> {
     res.render('home', {
-                    tabTitle: "Meal Prep Enterprise"
+            tabTitle: "Meal Prep Enterprise"
     })
 })
 
