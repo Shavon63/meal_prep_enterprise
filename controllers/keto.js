@@ -29,6 +29,73 @@ router.post('/', (req, res) => {
     })
 })
 
+router.post('/seed', (req, res) => {
+    const keto_seed = [
+        {
+            day: 'Monday',
+            breakfast: 'Egg Avacado Sandwhich',
+            lunch: 'fiber bar',
+            dinner: 'Bake Chicken & Brussels',
+            image: 'https://i.imgur.com/jlX5juV.jpg', 
+            images: 'https://i.imgur.com/6XRA0U2.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg'
+        },  {
+            day: 'Tuesday',
+            breakfast: 'Over Night Oats & blueberries',
+            lunch: 'fiber bar',
+            dinner: 'Steamed Fish & Asparagus',
+            image: 'https://i.imgur.com/KBFKwi8.jpg',
+            images:'https://i.imgur.com/LoEvbXj.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg'
+        },  {
+            day: 'Wednesday',
+            breakfast: 'Peanut Butter Banana Smoothie',
+            lunch: 'fiber bar',
+            dinner: 'Pepper Steak & Broccoli',
+            image: 'https://i.imgur.com/wcqP6zl.jpg', 
+            images: 'https://i.imgur.com/a3gR1q0.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg'
+        },  {
+            day: 'Thursday',
+            breakfast: 'Blueberry Banana Acai Bowl',
+            lunch: 'fiber bar',
+            dinner: 'Smoked Snapper & Veggie Mix',
+            image: 'https://i.imgur.com/cXIqiL1.jpg', 
+            images: 'https://i.imgur.com/Ievznlr.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg'
+        },  {
+            day: 'Friday',
+            breakfast: 'Egg Avacado Sandwhich',
+            lunch: 'fiber bar',
+            dinner: 'Steamed Fish & Asparagus',
+            image: 'https://i.imgur.com/jlX5juV.jpg', 
+            images: 'https://i.imgur.com/LoEvbXj.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg'
+        },  {
+            day: 'Saturday',
+            breakfast: 'Peanut Butter Banana Smoothie',
+            lunch: 'fiber bar',
+            dinner: 'Grilled Chicken & Veggie Mix',
+            image: 'https://i.imgur.com/wcqP6zl.jpg', 
+            images: 'https://i.imgur.com/qx6tj4M.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg'
+        },  {
+            day: 'Sunday',
+            breakfast: 'Over Night Oats & blueberries',
+            lunch: 'fiber bar',
+            dinner: 'Smoked Snapper & Veggie Mix',
+            image: 'https://i.imgur.com/KBFKwi8.jpg', 
+            images: 'https://i.imgur.com/Ievznlr.jpg',
+            img: 'https://i.imgur.com/JIcjou4.jpg' 
+        }
+    ]
+    
+    db.Keto.create(keto_seed, (err, keto) => {
+        res.redirect('/keto/')
+        // res.send(location)
+    })
+})
+
 router.get('/:id', (req, res) => {
     // find item specific to the URL
     db.Keto.findById(req.params.id, (err, keto) => {

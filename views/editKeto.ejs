@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <%- include  ('./partials/head.ejs') %>
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/editDetox.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/editKeto.css">
 </head>
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div class="form-flex-containter">
-        <form action="/keto/<%=keto._id%>?_method=PUT" method="POST">
+        <form action="/keto/<%=keto._id%>?_method=PUT" class=edit-form method="POST">
             <label for="breakfast">Breakfast:</label>
             <select name="breakfast">
                 <option value="Egg Avacado Sandwhich">Egg Avacado Sandwhich</option>
