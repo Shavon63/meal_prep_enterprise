@@ -1,3 +1,5 @@
+DETOX SHOW PAGE 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +7,35 @@
    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
    <link rel="stylesheet" href="/styles/nav.css">
    <link rel="stylesheet" href="/styles/home.css">
+   <link rel="stylesheet" href="/styles/showPages.css">
+
 </head>
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div>
-        <h1>DETOX PREP BOX</h1> 
+        <h1 class="starting-text">DETOX PREP BOX</h1> 
     </div>
-    <ul>
-    <%for(let detox of detoxs) {%>
-    <li class="detox_meal_items">
-                    <h2><%= detox.name %></h2> 
-                    <br />
+        <ul class="flex-container">
+            <%for(let detox of detoxs) {%>
+                <li class="detox-meal-items">
+                        <h2 class="dinner-day"><%= detox.name %></h2> 
+                        <br />
+                        <h4 class="dinner-name"><%= detox.dinner %></h4>
+                        <br />
                         <a href="/detox/<%=detox._id%>">
-                            <img src= <%= detox.images %> height="300" width="350">
+                            <img src= <%= detox.images %> height="300" width="400">
                         </a>
-                        <br />
-                        <h4 class="dinner_name"><%= detox.dinner %></h4>
-                        <br />
-                            <p>2 Meals</p> 
-                            <p>1 Snack</p>  
-                            <p>2 Teas & 1 pill</p>  
+                        
+                            <div class="content-container">
+                                <p><b>2 Meals</b></p> 
+                                <p><b>1 Snack</b></p>  
+                                <p><b>Teas & 1 pill</b></p> 
+                            </div> 
                  </li>                    
             <%}%>    
         </ul>
 
-        </div>
+     </div>
     </div>
     <div class="create-meal">
         <ul>
