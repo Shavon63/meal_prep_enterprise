@@ -21,6 +21,10 @@ imbedded screenshot of my website
    <li>As a gym body i have a yearly regiment on cutting and bulking that i do religeously. At this point i have it down to a science. I was looking for a great meal prep sapp that offers keto because its coming back to that time of year where i start cutting weight and the keto diet is top3 best ways too do so.</li>
    <br />
    <li>Ive been diagnosed with lymphatic issues and for everyone who knows the lyph system is important to staying healthy because it drains out all the cells in the body of its toxic waste. ve been studying books, articles and ted talks of different doctors and ive come to the conclusion that all diseases are metobolic and all start in the gut, so if im going to heal my gut i need to go on a cleanse but know that i cannot do it on my own.i found Meal Prep NYC and their detox regiment is amazing and the prices are to die for.</li>
+   <br />
+   <li>I have a wedding coming up and im a brides maid and id love to loose a lil bit of weight in a short but healthy way and stumbled apon this website and based on prices id love to give it a try</li>
+   <br />
+   <li>I've been sick for a lil while and have been back and forth to my primary care doctore and although all my tests come back negative, apon reading my tests i realized that the ratios of what are considered sick have went up exponentially and for someone to actually be considered sick they practically have to have one foot already in the grave. I'm looking for a app that can actually break down the detox for me and make the transmission smooth because ive never took altenative routes of healing the body outside of my primary care physician and what ive hurd from other authority figures.</li>
  </ul>
 
    
