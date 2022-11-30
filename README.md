@@ -16,7 +16,7 @@ imbedded screenshot of my website
   
  <h1>user stories<h1> 
  <ul>
-   <li>as a 300lb woman i'm very subconcious about my weight, i haveant done anything athletic since that one time at 12 where i got chased all the way by our neighborhood dog. Me knowing myself that i am not a gym person i decided to look through google to find a solution on loosing weight that didnt involve anything extream. I came accross Meal-prep-nyc and i beleieve t=with their keto program i can make the change of my life.</li>
+   <li>as a 300lb woman i'm very subconcious about my weight, i haveant done anything athletic since that one time at 12 where i got chased all the way home by our neighborhood dog. Me knowing myself that i am not a gym person i decided to look through google to find a solution on loosing weight that didnt involve anything extream. I came accross Meal-prep-nyc and i beleieve that with their keto program i can make the change of my life.</li>
    <br />
    <li>As a gym body i have a yearly regiment on cutting and bulking that i do religeously. At this point i have it down to a science. I was looking for a great meal prep sapp that offers keto because its coming back to that time of year where i start cutting weight and the keto diet is top3 best ways too do so.</li>
    <br />
