@@ -32,8 +32,31 @@ imbedded screenshot of my website
 <img src=https://user-images.githubusercontent.com/100313792/204711306-5db52b43-6657-4eb7-a7bb-b7eb208617fc.jpeg>
 <img src=https://user-images.githubusercontent.com/100313792/204711361-e0355784-09af-485c-99d5-2e317b8e0dc8.jpeg>
 
-   
+
+<h1>MVP</h1>
+<ul>
+<li>
+<p>page should have a navbar.</p>
+<p>I want atleast 7 routes working with two schemas each</p>
+<p>I want to be able to have carousel and multple photos in schema</p>
+<p>I also want to implament bootstrap</p>
+</li>
+</ul>
+
+
+ <h1>Stretch GOals</h1>
+ <ul>
+ <li>implament two extra routes.</li>
+ <li>create a home page and reroute db to their own seperate pages.</li>
+ <li>implament working search bar</li>
+ </ul>  
    
 <h1>Unsolved issues</h1>
    <p>i could not for the life of me ,ake a working search bar</p>
      <p>for a long time i could not get my edit page and create to work and it turns out it was just a typo issue and it blew my mind.</p>
+
+<h1>References</h1>
+<ul>
+<li>bootstrap.com</li>
+<li>Google Search</li>
+</ul>
