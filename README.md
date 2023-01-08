@@ -31,10 +31,7 @@ imbedded screenshot of my website
    
 <h1>WireFrames</h1>
    
-  <img src=https://user-images.githubusercontent.com/100313792/204711119-4325a170-6ef8-4a57-9359-1462acef68dc.jpeg>
- <img src=https://user-images.githubusercontent.com/100313792/204711263-dd98bcb0-31bc-47a3-b58a-2dc624687418.jpeg>
-<img src=https://user-images.githubusercontent.com/100313792/204711306-5db52b43-6657-4eb7-a7bb-b7eb208617fc.jpeg>
-<img src=https://user-images.githubusercontent.com/100313792/204711361-e0355784-09af-485c-99d5-2e317b8e0dc8.jpeg>
+
 
 
 <h1>MVP</h1>
